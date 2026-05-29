@@ -46,7 +46,7 @@ if uploaded_file is not None:
     if st.button("Verify APK"):
         try:
             response = requests.post(
-                "http://127.0.0.1:5000/verify",
+                "https://banking-api-4tlk.onrender.com/verify",
                 json={"hash": client_hash}
             )
 
